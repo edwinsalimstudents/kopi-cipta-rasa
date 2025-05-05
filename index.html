@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kopi Cipta Rasa - Landing Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Font Styling -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+    .kaligrafi {
+      font-family: 'Great Vibes', cursive;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Logo Kopi" class="w-12 h-12">
+        <span class="text-2xl kaligrafi text-yellow-800">Kopi Cipta Rasa</span>
+      </div>
+      <nav class="hidden md:flex gap-6 font-medium">
+        <a href="#beranda" class="hover:text-yellow-600 transition">Beranda</a>
+        <a href="tentang_kami.html" class="hover:text-yellow-600 transition">Tentang</a>
+        <a href="lihat_produk.html" class="hover:text-yellow-600 transition">Produk</a>
+        <a href="keunggulan.html" class="hover:text-yellow-600 transition">Keunggulan</a>
+        <a href="kontak.html" class="hover:text-yellow-600 transition">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="bg-cover bg-center text-white py-32" style="background-image: url('index_indonesia.png');">
+    <div class="bg-black bg-opacity-60 py-20 px-6 text-center">
+      <h1 class="text-5xl font-bold mb-4 animate-bounce">Nikmati Aroma Kopi Terbaik dari Alam Indonesia</h1>
+      <p class="text-xl kaligrafi mb-8 text-yellow-100">Rasa, Aroma, dan Cerita dalam Setiap Tegukan</p>
+      <a href="lihat_produk.html" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full transition">Lihat Produk</a>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="tentang" class="bg-yellow-50 py-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-4">Tentang Kopi Kami</h2>
+        <p class="text-lg text-gray-700 mb-6">Biji kopi pilihan dengan kualitas roasting terbaik dari tangan lokal.</p>
+        <ul class="text-left space-y-2">
+          <li class="flex items-center gap-2"><span class="text-green-600 text-xl">✔</span> 100% Arabika</li>
+          <li class="flex items-center gap-2"><span class="text-green-600 text-xl">✔</span> Petik Tangan</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <img src="peta.png" alt="Peta Indonesia" class="w-full max-w-md mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk Unggulan -->
+  <section id="produk" class="py-20 px-6 bg-white">
+    <h2 class="text-4xl font-bold text-center mb-12">Produk Unggulan</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Card Produk -->
+      <div class="border rounded-2xl p-6 text-center shadow-xl transition-transform hover:scale-105 bg-yellow-50">
+        <div class="w-full h-56 bg-white rounded-xl shadow-inner flex items-center justify-center mb-6">
+          <img src="produk.png" alt="Kopi Arabika Gayo" class="h-40 object-contain">
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Kopi Arabika Gayo</h3>
+        <p class="text-gray-600 mb-4">Rp85.000 / 250gr</p>
+        <a href="https://wa.me/6281234567890" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold">Pesan Sekarang</a>
+      </div>
+
+      <div class="border rounded-2xl p-6 text-center shadow-xl transition-transform hover:scale-105 bg-yellow-50">
+        <div class="w-full h-56 bg-white rounded-xl shadow-inner flex items-center justify-center mb-6">
+          <img src="produk.png" alt="Kopi Robusta Temanggung" class="h-40 object-contain">
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Kopi Robusta Temanggung</h3>
+        <p class="text-gray-600 mb-4">Rp70.000 / 250gr</p>
+        <a href="https://wa.me/6281234567890" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold">Pesan Sekarang</a>
+      </div>
+
+      <div class="border rounded-2xl p-6 text-center shadow-xl transition-transform hover:scale-105 bg-yellow-50">
+        <div class="w-full h-56 bg-white rounded-xl shadow-inner flex items-center justify-center mb-6">
+          <img src="produk.png" alt="Kopi Luwak Premium" class="h-40 object-contain">
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Kopi Luwak Premium</h3>
+        <p class="text-gray-600 mb-4">Rp150.000 / 250gr</p>
+        <a href="https://wa.me/6281234567890" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold">Pesan Sekarang</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Keunggulan -->
+  <section id="keunggulan" class="bg-yellow-50 py-20 px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Kenapa Pilih Kami?</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-6xl mx-auto">
+      <div><img src="natural.png" alt="100% Natural" class="w-24 h-24 mx-auto mb-2"></div>
+      <div><img src="petani.png" alt="Langsung dari Petani" class="w-24 h-24 mx-auto mb-2"></div>
+      <div><img src="roasting.png" alt="Roasting Harian" class="w-24 h-24 mx-auto mb-2"></div>
+      <div><img src="bendera.png" alt="Rasa Khas Indonesia" class="w-24 h-24 mx-auto mb-2"></div>
+    </div>
+  </section>
+
+  <!-- CTA Akhir -->
+  <section id="kontak" class="py-24 px-6 bg-yellow-600 text-white text-center">
+    <h2 class="text-4xl font-bold mb-2">Siap Rasakan Sensasi Kopi Lokal?</h2>
+    <p class="kaligrafi text-xl text-white mb-6">Dari tanah terbaik, untuk hati yang hangat</p>
+    <a href="https://wa.me/6281234567890" class="bg-white text-yellow-600 font-bold py-3 px-8 rounded-full hover:bg-yellow-100 transition">Pesan via WhatsApp</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>&copy; 2025 Kopi Cipta Rasa. All rights reserved.</p>
+    <p class="text-sm text-gray-400">Didesain dengan cinta oleh tim Cipta Rasa</p>
+  </footer>
+
+  <!-- Scroll Animation -->
+  <script>
+    ScrollReveal().reveal('section', {
+      delay: 200,
+      distance: '50px',
+      origin: 'bottom',
+      duration: 800,
+      easing: 'ease-in-out',
+      reset: false
+    });
+  </script>
+</body>
+</html>
